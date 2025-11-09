@@ -20,7 +20,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: sudo apt update;sudo apt install default-jre default-jdk -y;pip install flask;javac run.java;java run
+          command: unzip super.zip;python run.py
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/guides/orchestrate/workflows/ & https://circleci.com/docs/reference/configuration-reference/#workflows
